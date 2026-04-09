@@ -4,10 +4,30 @@
   --bg-card:        #122038;
   --border-subtle:  #1e3a5f;
   --red:            #e63946;
+  --yellow:         #f4b942;
+  --green:          #2ec4b6;
   --text-primary:   #e8eef7;
   --text-secondary: #8aabbf;
   --font-body:      'Barlow', sans-serif;
   --transition:     0.25s ease;
+  
+  /* making it more curved at the edges for the stat boxes cuz why not */
+  --radius:         10px;
+}
+
+h1 {
+  font-family: sans-serif;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 32px 28px 8px;
+  margin: 0;
+  border-bottom: 2px;
+  text-align: center;
+}
+
+h1 span.accent {
+  color: var(--red);
 }
 
 body {
@@ -25,6 +45,7 @@ body {
   flex-wrap: wrap;
   gap: 4px;
   padding: 10px 16px;
+  justify-content: center;
 }
 
 .tablinks {
@@ -32,12 +53,12 @@ body {
   border: 1px solid transparent;
   color: var(--text-secondary);
   font-family: var(--font-body);
-  font-size: 13px;
+  font-size: 18px;
   font-weight: 600;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  padding: 8px 16px;
-  border-radius: 6px;
+  padding: 8px 50px;
+  border-radius: 15px;
   cursor: pointer;
   transition: var(--transition);
 }
@@ -54,7 +75,6 @@ body {
   border-color: var(--red);
 }
 
-/* ---- TAB CONTENT ---- */
 .tabcontent {
   display: none;
   padding: 24px;
@@ -62,4 +82,53 @@ body {
 
 .tabcontent.active-tab {
   display: block;
+}
+
+
+.stats { 
+  display: flex; 
+  flex-direction: column; 
+  gap: 16px; 
+  min-width: 220px; 
+}
+.stat-card {
+  background: var(--bg-card);
+  border-left: 4px solid;
+  border-radius: var(--radius);
+  padding: 18px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.red-border    { 
+  border-color: var(--red); 
+}
+
+.yellow-border { 
+  border-color: var(--yellow); 
+}
+.green-border  { 
+  border-color: var(--green); 
+}
+.stat-num { 
+  font-family: var(--font-display); 
+  font-size: 2.6rem; line-height: 1; 
+  letter-spacing: 0.02em; 
+}
+
+.stat-num.red    { 
+  color: var(--red); 
+}
+.stat-num.yellow { 
+  color: var(--yellow); 
+}
+
+.stat-num.green  { 
+  color: var(--green); 
+}
+
+.stat-label { 
+  font-size: 12px; color: var(--text-secondary); 
+  line-height: 1.4; 
 }
