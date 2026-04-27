@@ -7,93 +7,115 @@
 <!-- the tab code is based on https://www.w3schools.com/howto/howto_js_tabs.asp-->
 <body>
 	
-	<!-- Tab links -->
-	<div class="tab">
-		<button class="tablinks" onclick="openTab(event, 'tab1')">Introduction</button>
-		<button class="tablinks" onclick="openTab(event, 'tab2')">Solutions</button>
-		<button class="tablinks" onclick="openTab(event, 'tab3')">Minigame: Real or AI?</button>
-        <button class="tablinks" onclick="openTab(event, 'tab4')">Sources</button>  
-	</div>
-	
-    <h1>The World of AI <span class="accent">Deepfakes</span> & AI <span class="accent">Misinformation</span></h1>
+	<div id="splash">
+		<h1 class="splash-title">The World of AI <span class="accent">Deepfakes</span> & AI <span class="accent">Misinformation</span></h1>
+		<p class="splash-sub">Before we begin, please take our quick survey!</p>
 
-	<!-- Tab content -->
-	<div id="tab1" class="tabcontent">
+		<img src="qr-placeholder.png" alt="QR Code for survey" class="qr-img"/>
 
-        <div class="stats">
-            <div class="stat-card red-border">
-                <span class="stat-num red">500K+</span>
-                <span class="stat-label">deepfakes online<br/>(2023 estimate)</span>
-            </div>
-            
-            <div class="stat-card yellow-border">
-                <span class="stat-num yellow">96%</span>
-                <span class="stat-label">target women for<br/>non-consensual content</span>
-            </div>
-            
-            <div class="stat-card green-border">
-                <span class="stat-num green">$1B+</span>
-                <span class="stat-label">annual harm cost<br/>estimated by researchers</span>
-            </div>
-        </div>
+		<a class="survey-link" href="https://forms.google.com/placeholder" target="_blank">
+			📋 https://forms.google.com/placeholder
+		</a>
 
-		<h3>What is a DeepFake?</h3>
+		<button class="continue-btn" onclick="enterSite()">Continue →</button>
 
-		<p>
-			DeepFakes are essentially AI generated images made to look like real people.
-			This can be used to impersonate someone or depict them doing things theey wouldn't
-			normally do. DeepFakes also aren't limited to just images. You can make videos
-			and voice deepfakes as well which can allow you to for example, make the president
-			run away from the police, or put someone in any clothing of your choice. Unfortunately
-			that second example is more real than you would think.
-		</p>
-
-		<h3>In the News</h3>
-		<h4> Non-consesual Images</h4>
-		<p>
-			One of the examples how DeepFakes harm people is
-			through creating images of people doing things
-			they would never actually do. This even extends to
-			sexual content of women and even young girls.
-		</p>
-
-		<h4>example 2</h4>
-		<p>text 2</p>
-
-		<h3>Significance</h3>
-		<p>significance</p>
-	</div>
-	
-	<div id="tab2" class="tabcontent">
-		<h3>Legislation</h3>
-		<p>legislation</p>
-
-		<h3>Platform Moderation</h3>
-		<p>moderation</p>
-
-		<h3>Model Guardrails</h3>
-		<p>guardrails</p>
-	</div>
-	
-	<div id="tab3" class="tabcontent">
-		<h1>Take the quiz!</h1>
-		<h3>Can you tell the difference between real and AI-generated faces?</h2>
-		<p>interactive game goes here</p>
+		<div class="results-box">
+			<p class="results-label">View Survey Results</p>
+			<input type="password" id="results-password" placeholder="Enter password..." class="password-input"/>
+			<button class="results-btn" onclick="checkPassword()">Submit</button>
+			<p id="password-msg" class="password-msg"></p>
+		</div>
 	</div>
 
-    <div id="tab4" class="tabcontent">
-        <section class="sources-section">
-            <h3 class="section-heading">Sources</h3>
-            <ol class="sources-list">
-                <li>Deeptrace Labs — <em>State of Deepfakes Report</em></li>
-                <li>WIRED — <em>The Deepfake Problem is Getting Worse</em></li>
-                <li>Congress.gov — <em>DEFIANCE Act 2024</em></li>
-                <li>MIT Technology Review — <em>AI Detection Tools</em></li>
-                <li><a href="https://thispersondoesnotexist.com" target="_blank">thispersondoesnotexist.com</a> (StyleGAN2)</li>
-                <li><a href="https://deepware.ai" target="_blank">deepware.ai</a></li>
-            </ol>
-        </section>
-    </div>
+	<div id="main-site"></div>
+		<!-- Tab links -->
+		<div class="tab">
+			<button class="tablinks" onclick="openTab(event, 'tab1')">Introduction</button>
+			<button class="tablinks" onclick="openTab(event, 'tab2')">Solutions</button>
+			<button class="tablinks" onclick="openTab(event, 'tab3')">Minigame: Real or AI?</button>
+			<button class="tablinks" onclick="openTab(event, 'tab4')">Sources</button>  
+		</div>
+		
+		<h1>The World of AI <span class="accent">Deepfakes</span> & AI <span class="accent">Misinformation</span></h1>
+
+		<!-- Tab content -->
+		<div id="tab1" class="tabcontent">
+
+			<div class="stats">
+				<div class="stat-card red-border">
+					<span class="stat-num red">500K+</span>
+					<span class="stat-label">deepfakes online<br/>(2023 estimate)</span>
+				</div>
+				
+				<div class="stat-card yellow-border">
+					<span class="stat-num yellow">96%</span>
+					<span class="stat-label">target women for<br/>non-consensual content</span>
+				</div>
+				
+				<div class="stat-card green-border">
+					<span class="stat-num green">$1B+</span>
+					<span class="stat-label">annual harm cost<br/>estimated by researchers</span>
+				</div>
+			</div>
+
+			<h3>What is a DeepFake?</h3>
+
+			<p>
+				DeepFakes are essentially AI generated images made to look like real people.
+				This can be used to impersonate someone or depict them doing things theey wouldn't
+				normally do. DeepFakes also aren't limited to just images. You can make videos
+				and voice deepfakes as well which can allow you to for example, make the president
+				run away from the police, or put someone in any clothing of your choice. Unfortunately
+				that second example is more real than you would think.
+			</p>
+
+			<h3>In the News</h3>
+			<h4> Non-consesual Images</h4>
+			<p>
+				One of the examples how DeepFakes harm people is
+				through creating images of people doing things
+				they would never actually do. This even extends to
+				sexual content of women and even young girls.
+			</p>
+
+			<h4>example 2</h4>
+			<p>text 2</p>
+
+			<h3>Significance</h3>
+			<p>significance</p>
+		</div>
+		
+		<div id="tab2" class="tabcontent">
+			<h3>Legislation</h3>
+			<p>legislation</p>
+
+			<h3>Platform Moderation</h3>
+			<p>moderation</p>
+
+			<h3>Model Guardrails</h3>
+			<p>guardrails</p>
+		</div>
+		
+		<div id="tab3" class="tabcontent">
+			<h1>Take the quiz!</h1>
+			<h3>Can you tell the difference between real and AI-generated faces?</h2>
+			<p>interactive game goes here</p>
+		</div>
+
+		<div id="tab4" class="tabcontent">
+			<section class="sources-section">
+				<h3 class="section-heading">Sources</h3>
+				<ol class="sources-list">
+					<li>Deeptrace Labs — <em>State of Deepfakes Report</em></li>
+					<li>WIRED — <em>The Deepfake Problem is Getting Worse</em></li>
+					<li>Congress.gov — <em>DEFIANCE Act 2024</em></li>
+					<li>MIT Technology Review — <em>AI Detection Tools</em></li>
+					<li><a href="https://thispersondoesnotexist.com" target="_blank">thispersondoesnotexist.com</a> (StyleGAN2)</li>
+					<li><a href="https://deepware.ai" target="_blank">deepware.ai</a></li>
+				</ol>
+			</section>
+		</div>
+	</div>
 
 	<script src="script.js"></script>
 </body>
