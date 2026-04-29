@@ -99,7 +99,24 @@
 		<div id="tab3" class="tabcontent">
 			<h1>Take the quiz!</h1>
 			<h3>Can you tell the difference between real and AI-generated faces?</h2>
-			<p>interactive game goes here</p>
+
+			<div id="game-ui" class="game-container">
+				<h2 id="game-status">Loading faces...</h2>
+				<p class="scoreboard">Score: <strong id="score">0</strong></p>
+				
+				<div class="faces-container">
+					<div class="face-box" onclick="makeGuess(true)">
+						<img id="img-left" src="" alt="Face 1">
+					</div>
+					<div class="face-box" onclick="makeGuess(false)">
+						<img id="img-right" src="" alt="Face 2">
+					</div>
+				</div>
+
+				<div class="game-controls">
+					<button id="next-btn" class="continue-btn" onclick="startRound()" style="display: none;">Next Round →</button>
+				</div>
+			</div>
 		</div>
 
 		<div id="tab4" class="tabcontent">

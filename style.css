@@ -272,3 +272,47 @@ body {
 
 .password-msg.success { color: var(--green); }
 .password-msg.error   { color: var(--red); }
+
+/* minigame styles */
+.game-container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.scoreboard {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.faces-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.face-box {
+    cursor: pointer;
+    border: 5px solid transparent; /* placeholder for correct/wrong border */
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.face-box:hover {
+    transform: scale(1.03);
+    border-color: #007bff; /* highlights blue on hover */
+}
+
+.face-box img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+.game-controls {
+    margin-top: 30px;
+    height: 60px; /* reserves space so the layout doesn't jump */
+}
