@@ -2,6 +2,7 @@
 <html>
 
 <head>
+	<meta charset="UTF-8">
 	<link rel="stylesheet" href="style.css">
 </head>
 <!-- the tab code is based on https://www.w3schools.com/howto/howto_js_tabs.asp-->
@@ -206,14 +207,35 @@
 		</div>
 		
 		<div id="tab2" class="tabcontent">
-			<h3>Legislation</h3>
-			<p>legislation</p>
+			<div class="solutions-container">
+				<h2 class="solutions-heading">POLICY-LEVEL SOLUTIONS</h2>
+				<p class="solutions-intro">Deepfakes are a shared problem that requires system-wide responses. Here are the three main policy approaches being pursued to reduce harm.</p>
 
-			<h3>Platform Moderation</h3>
-			<p>moderation</p>
+				<div class="solution-card legislation-card">
+					<h3>Legislation</h3>
+					<p><strong>What it does:</strong> Laws create legal consequences for deepfake abuse and give victims a path to justice. The DEFIANCE Act (2024) provides civil remedies for non-consensual synthetic images. Proposed laws like the NO FAKES Act aim to protect voice and likeness from unauthorized use.</p>
+					<p><strong>The gap:</strong> Most laws are reactive and help after harm is done, but not before. Laws also vary by state and country, leaving some people protected and others vulnerable. And enforcement is slow; by the time a case moves through courts, misinformation has already spread widely.</p>
+					<p><strong>What matters:</strong> Legislation signals that synthetic media abuse is serious, but it works best when paired with faster detection and platform intervention.</p>
+				</div>
 
-			<h3>Model Guardrails</h3>
-			<p>guardrails</p>
+				<div class="solution-card moderation-card">
+					<h3>Platform Moderation</h3>
+					<p><strong>What it does:</strong> Platforms can label, remove, or de-amplify deepfakes, slowing their spread before they reach millions. Some platforms use automation to flag potential synthetic media, then humans review flagged content.</p>
+					<p><strong>The gap:</strong> Moderation is slow and inconsistent. A viral deepfake can reach thousands of people before any human sees it. Rules also vary by platform, and bad actors simply repost content across multiple sites or private channels where moderation is weaker.</p>
+					<p><strong>What matters:</strong> Platform policies set the baseline for what users see. If platforms deprioritize deepfakes without banning them outright, they control the spread before lawmakers or courts get involved.</p>
+				</div>
+
+				<div class="solution-card guardrails-card">
+					<h3>Model Guardrails</h3>
+					<p><strong>What it does:</strong> Guardrails built into AI models can refuse harmful requests, add watermarks to synthetic media, or limit the generation of explicit content. This aims to stop deepfakes at the source before they are ever created.</p>
+					<p><strong>The gap:</strong> Guardrails only work on the tools that implement them. Open-source models, local installations, and third-party apps bypass built-in safety features. A motivated creator can find tools without guardrails, rendering this approach incomplete.</p>
+					<p><strong>What matters:</strong> Strong guardrails reduce casual misuse and raise the barrier to entry for bad actors. Combined with other policies, they make it harder (but not impossible) to create harmful synthetic media.</p>
+				</div>
+
+				<div class="solution-takeaway">
+					<strong>The Bottom Line:</strong> None of these three approaches works alone. Legislation without platform action lets viral deepfakes spread unchecked. Platform moderation without legislation leaves creators unpunished. Guardrails without enforcement get bypassed. The best outcomes happen when all three are strong and coordinated.
+				</div>
+			</div>
 		</div>
 		
 		<div id="tab3" class="tabcontent">

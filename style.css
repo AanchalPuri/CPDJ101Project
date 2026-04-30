@@ -668,3 +668,106 @@ body {
 .action-card a:hover {
   text-decoration: underline;
 }
+
+/* solutions section */
+.solutions-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+
+.solutions-heading {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  margin: 0 0 12px;
+  text-align: center;
+}
+
+.solutions-intro {
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 15px;
+  line-height: 1.7;
+  max-width: 800px;
+  margin: 0 auto 32px;
+}
+
+.solution-card {
+  background: var(--bg-card);
+  border-left: 6px solid;
+  border-radius: var(--radius);
+  padding: 28px;
+  margin-bottom: 20px;
+  transition: var(--transition);
+}
+
+.solution-card:hover {
+  background: #172840;
+  transform: translateX(4px);
+}
+
+.legislation-card {
+  border-left-color: var(--yellow);
+}
+
+.legislation-card h3 {
+  color: var(--yellow);
+}
+
+.moderation-card {
+  border-left-color: var(--red);
+}
+
+.moderation-card h3 {
+  color: var(--red);
+}
+
+.guardrails-card {
+  border-left-color: var(--green);
+}
+
+.guardrails-card h3 {
+  color: var(--green);
+}
+
+.solution-card h3 {
+  margin: 0 0 14px;
+  font-size: 1.2rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.solution-card p {
+  margin: 0 0 12px;
+  color: var(--text-secondary);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.solution-card p:last-child {
+  margin-bottom: 0;
+}
+
+.solution-card strong {
+  color: var(--text-primary);
+}
+
+.solution-takeaway {
+  background: linear-gradient(135deg, rgba(27, 56, 45, 0.3), rgba(13, 33, 45, 0.5));
+  border: 2px solid var(--green);
+  border-radius: var(--radius);
+  padding: 20px 24px;
+  margin-top: 28px;
+  font-size: 15px;
+  color: var(--text-primary);
+  text-align: center;
+  line-height: 1.6;
+}
+
+.solution-takeaway strong {
+  color: var(--green);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
