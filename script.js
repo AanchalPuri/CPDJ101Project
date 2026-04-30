@@ -30,7 +30,7 @@ function checkPassword() {
     msg.textContent = '✓ Correct! Redirecting...';
     msg.className = 'password-msg success';
     setTimeout(() => {
-      window.open('https://docs.google.com/forms/placeholder-results-link', '_blank');
+      window.open('https://docs.google.com/spreadsheets/d/1ikDi5dFphBab-EubrWg9BE-pDE4dxQYFa3q9EU1NiyQ/edit?resourcekey=&gid=736526557#gid=736526557', '_blank');
     }, 1000);
   } else {
     msg.textContent = '✗ Incorrect password.';
