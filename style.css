@@ -85,13 +85,15 @@ body {
   display: block;
 }
 
-
-.stats { 
-  display: flex; 
-  flex-direction: column; 
-  gap: 16px; 
-  min-width: 220px; 
+.stats {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 800px;
+  flex-shrink: 0;
+  margin: 0 auto;
 }
+
 .stat-card {
   background: var(--bg-card);
   border-left: 4px solid;
@@ -315,4 +317,167 @@ body {
 .game-controls {
     margin-top: 30px;
     height: 60px; /* reserves space so the layout doesn't jump */
+}
+
+
+/* source page style */
+.sources-section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+
+.sources-section .section-heading {
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+  border-bottom: 2px solid var(--border-subtle);
+  padding-bottom: 12px;
+}
+
+.sources-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.sources-list li {
+  background: var(--bg-card);
+  border-left: 4px solid var(--border-subtle);
+  border-radius: var(--radius);
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  transition: var(--transition);
+}
+
+.sources-list li:hover {
+  border-left-color: var(--red);
+  transform: translateX(4px);
+}
+
+.sources-list li:nth-child(2) { border-left-color: var(--yellow); }
+.sources-list li:nth-child(3) { border-left-color: var(--green); }
+.sources-list li:nth-child(4) { border-left-color: var(--blue, #4a9eff); }
+
+.source-num {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--text-muted, #4a6a82);
+  min-width: 28px;
+}
+
+.sources-list a {
+  color: var(--green);
+  text-decoration: none;
+}
+
+.sources-list a:hover {
+  text-decoration: underline;
+}
+
+/* info page style */
+
+.info-section {
+  max-width: 720px;   /* slightly narrower so it matches better */
+  margin: 0 auto;
+  padding: 20px 24px 40px;
+}
+
+.info-section h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--red);
+  margin: 40px 0 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.info-section h3::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--border-subtle);
+}
+
+.info-section h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--yellow);
+  margin: 24px 0 8px;
+  letter-spacing: 0.04em;
+}
+
+.info-section p {
+  color: var(--text-secondary);
+  line-height: 1.8;
+  font-size: 15px;
+  max-width: 720px;
+}
+
+/* news cards */
+.news-card {
+  background: var(--bg-card);
+  border-radius: var(--radius);
+  padding: 24px;
+  margin: 16px 0;
+  border-left: 4px solid var(--yellow);
+  transition: var(--transition);
+}
+
+.news-card:hover {
+  transform: translateX(4px);
+  background: #172840;
+}
+
+.news-card h4 {
+  margin: 0 0 10px;
+  color: var(--yellow);
+}
+
+.news-card p {
+  margin: 0;
+}
+
+/* significance callout box */
+.significance-box {
+  background: linear-gradient(135deg, #122038, #0f2038);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius);
+  padding: 28px;
+  margin-top: 16px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.sig-point {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+}
+
+.sig-icon {
+  font-size: 1.6rem;
+  flex-shrink: 0;
+}
+
+.sig-point p {
+  margin: 0;
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.sig-point p strong {
+  color: var(--text-primary);
+  display: block;
+  margin-bottom: 4px;
 }

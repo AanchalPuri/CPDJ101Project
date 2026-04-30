@@ -27,12 +27,12 @@
 		</div>
 	</div>
 
-	<div id="main-site"></div>
+	<div id="main-site">
 		<!-- Tab links -->
 		<div class="tab">
-			<button class="tablinks" onclick="openTab(event, 'tab1')">Introduction</button>
-			<button class="tablinks" onclick="openTab(event, 'tab2')">Solutions</button>
+			<button class="tablinks" onclick="openTab(event, 'tab1')">Information</button>
 			<button class="tablinks" onclick="openTab(event, 'tab3')">Minigame: Real or AI?</button>
+			<button class="tablinks" onclick="openTab(event, 'tab2')">Solutions</button>
 			<button class="tablinks" onclick="openTab(event, 'tab4')">Sources</button>  
 		</div>
 		
@@ -40,58 +40,80 @@
 
 		<!-- Tab content -->
 		<div id="tab1" class="tabcontent">
-
 			<div class="stats">
-				<div class="stat-card red-border">
-					<span class="stat-num red">500K+</span>
-					<span class="stat-label">deepfakes online<br/>(2023 estimate)</span>
-				</div>
-				
-				<div class="stat-card yellow-border">
-					<span class="stat-num yellow">96%</span>
-					<span class="stat-label">target women for<br/>non-consensual content</span>
-				</div>
-				
-				<div class="stat-card green-border">
-					<span class="stat-num green">$1B+</span>
-					<span class="stat-label">annual harm cost<br/>estimated by researchers</span>
-				</div>
+			<div class="stat-card red-border">
+				<span class="stat-num red">500K+</span>
+				<span class="stat-label">deepfakes online<br/>(2023 estimate)</span>
 			</div>
+			<div class="stat-card yellow-border">
+				<span class="stat-num yellow">96%</span>
+				<span class="stat-label">target women for<br/>non-consensual content</span>
+			</div>
+			<div class="stat-card green-border">
+				<span class="stat-num green">$1B+</span>
+				<span class="stat-label">annual harm cost<br/>estimated by researchers</span>
+			</div>
+		</div>
 
-			<h3>What is a DeepFake?</h3>
+		<div class="info-section">
 
+			<h3>What is a Deepfake?</h3>
 			<p>
-				DeepFakes are essentially AI generated images made to look like real people.
-				This can be used to impersonate someone or depict them doing things theey wouldn't
-				normally do. DeepFakes also aren't limited to just images. You can make videos
-				and voice deepfakes as well which can allow you to for example, make the president
-				run away from the police, or put someone in any clothing of your choice. Unfortunately
-				that second example is more real than you would think.
+			Deepfakes are AI-generated media (images, videos, or audio) that are designed to look and sound like real people. 
+			Using machine learning, anyone can now fabricate a person saying or doing something they never did. 
+			What used to require a Hollywood studio can now be done with a free app in minutes.
 			</p>
 
 			<h3>In the News</h3>
-			<h4> Non-consesual Images</h4>
-			<p>
-				One of the examples how DeepFakes harm people is
-				through creating images of people doing things
-				they would never actually do. This even extends to
-				sexual content of women and even young girls.
-			</p>
 
-			<h4>The Scam Revolution</h4>
+			<div class="news-card">
+			<h4>🚫 Non-Consensual Images</h4>
 			<p>
-				Because of how accurate and realistic it can be, deepfakes have also 
-				found a home with scammers who use the technology to take money or information
-				from others. These scams can take many forms. Scamers can use the faces of celebrities
-				by making it look like they endorsed a product they never acutally endorsed. The victims
-				end up buying a fake product and get their finacial inforamtion stolen.</n>
-				Scamers can also deepfakes in romance scams where they use dating sites along with
-				fake photos to get information and money from people by pretending to be someone else.
-				They can even use deepfakes to create false trageties and elict money through donations.
+				One of the most damaging uses of deepfakes is creating explicit images of real people without their consent. 
+				96% of deepfakes online target women, especially including minors. Victims face harassment, damaged reputations, 
+				and lasting psychological harm, often with no legal recourse.
 			</p>
+			</div>
+
+			<div class="news-card">
+			<h4>💸 The Scam Revolution</h4>
+			<p>
+				Scammers use deepfakes to impersonate celebrities endorsing fake products, run romance scams with fabricated 
+				photos, and even clone voices of family members to demand emergency money transfers. 
+				Because the content looks and sounds real, victims have no reason to doubt it until it's too late.
+			</p>
+			</div>
+
+			<div class="news-card">
+			<h4>🗳️ Election Interference</h4>
+			<p>
+				In January 2024, AI-cloned robocalls mimicking President Biden's voice told New Hampshire voters 
+				to skip the Democratic primary. Deepfakes are now a direct threat to democratic participation 
+				and the technology to create them is free and widely available.
+			</p>
+			</div>
 
 			<h3>Significance</h3>
-			<p>significance</p>
+			<div class="significance-box">
+			<div class="sig-point">
+				<span class="sig-icon">⚡</span>
+				<p><strong>Harm spreads instantly</strong>Viral platforms expose content to millions before any takedown can happen.</p>
+			</div>
+			<div class="sig-point">
+				<span class="sig-icon">🔒</span>
+				<p><strong>Consent violated at the source</strong>Training data is scraped without permission — companies profit, individuals pay the price.</p>
+			</div>
+			<div class="sig-point">
+				<span class="sig-icon">⚖️</span>
+				<p><strong>Laws can't keep up</strong>Most legislation is reactive. Victims have no protection in the moment a deepfake is created.</p>
+			</div>
+			<div class="sig-point">
+				<span class="sig-icon">👁️</span>
+				<p><strong>Most people can't spot them</strong>Without digital literacy, people don't even know to question what they're seeing.</p>
+			</div>
+			</div>
+
+		</div>
 		</div>
 		
 		<div id="tab2" class="tabcontent">
@@ -132,12 +154,30 @@
 			<section class="sources-section">
 				<h3 class="section-heading">Sources</h3>
 				<ol class="sources-list">
-					<li>Deeptrace Labs — <em>State of Deepfakes Report</em></li>
-					<li>WIRED — <em>The Deepfake Problem is Getting Worse</em></li>
-					<li>Congress.gov — <em>DEFIANCE Act 2024</em></li>
-					<li>MIT Technology Review — <em>AI Detection Tools</em></li>
-					<li><a href="https://thispersondoesnotexist.com" target="_blank">thispersondoesnotexist.com</a> (StyleGAN2)</li>
-					<li><a href="https://deepware.ai" target="_blank">deepware.ai</a></li>
+					<li>
+						<span class="source-num">01</span>
+						Deeptrace Labs — <em>State of Deepfakes Report</em>
+					</li>
+					<li>
+						<span class="source-num">02</span>
+						WIRED — <em>The Deepfake Problem is Getting Worse</em>
+					</li>
+					<li>
+						<span class="source-num">03</span>
+						Congress.gov — <em>DEFIANCE Act 2024</em>
+					</li>
+					<li>
+						<span class="source-num">04</span>
+						MIT Technology Review — <em>AI Detection Tools</em>
+					</li>
+					<li>
+						<span class="source-num">05</span>
+						<a href="https://thispersondoesnotexist.com" target="_blank">thispersondoesnotexist.com</a> — StyleGAN2
+					</li>
+					<li>
+						<span class="source-num">06</span>
+						<a href="https://deepware.ai" target="_blank">deepware.ai</a> — Deepfake Detection Tool
+					</li>
 				</ol>
 			</section>
 		</div>
