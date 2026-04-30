@@ -158,7 +158,7 @@ body {
 
 .splash-sub {
   color: var(--text-secondary);
-  font-size: 16px;
+  font-size: 25px;
   margin: 0;
 }
 
@@ -171,7 +171,7 @@ body {
 
 .survey-link {
   font-family: 'Courier New', monospace;
-  font-size: 13px;
+  font-size: 18px;
   color: var(--text-secondary);
   border: 1px solid var(--border-subtle);
   background: var(--bg-card);
@@ -223,7 +223,7 @@ body {
 
 .results-label {
   color: var(--text-secondary);
-  font-size: 13px;
+  font-size: 17px;
   font-weight: 600;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -237,7 +237,7 @@ body {
   border-radius: 6px;
   color: var(--text-primary);
   font-family: var(--font-body);
-  font-size: 14px;
+  font-size: 16px;
   padding: 8px 12px;
   outline: none;
   text-align: center;
@@ -419,7 +419,7 @@ body {
 .info-section p {
   color: var(--text-secondary);
   line-height: 1.8;
-  font-size: 15px;
+  font-size: 18px;
   max-width: 720px;
 }
 
@@ -444,6 +444,8 @@ body {
 }
 
 .news-card p {
+  font-size: 18px;
+  line-height: 1.7;
   margin: 0;
 }
 
@@ -472,7 +474,7 @@ body {
 
 .sig-point p {
   margin: 0;
-  font-size: 14px;
+  font-size: 17px;
   color: var(--text-secondary);
 }
 
@@ -552,7 +554,7 @@ body {
 
 .timeline-content p {
   margin: 0;
-  font-size: 13.5px;
+  font-size: 17px;
   color: var(--text-secondary);
 }
 
@@ -587,7 +589,7 @@ body {
 }
 
 .sign-card p {
-  font-size: 13px;
+  font-size: 17px;
   color: var(--text-secondary);
   margin: 0;
 }
@@ -611,7 +613,7 @@ body {
 .action-intro {
   color: var(--text-secondary);
   text-align: center;
-  font-size: 15px;
+  font-size: 18px;
   margin-bottom: 36px;
   max-width: 600px;
   margin-left: auto;
@@ -656,7 +658,7 @@ body {
 }
 
 .action-card ul li {
-  font-size: 14px;
+  font-size: 17px;
   color: var(--text-secondary);
   line-height: 1.5;
 }
@@ -742,7 +744,7 @@ body {
 .solution-card p {
   margin: 0 0 12px;
   color: var(--text-secondary);
-  font-size: 14px;
+  font-size: 17px;
   line-height: 1.6;
 }
 
@@ -760,7 +762,7 @@ body {
   border-radius: var(--radius);
   padding: 20px 24px;
   margin-top: 28px;
-  font-size: 15px;
+  font-size: 17px;
   color: var(--text-primary);
   text-align: center;
   line-height: 1.6;
